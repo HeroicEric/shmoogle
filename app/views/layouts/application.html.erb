@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shmoogle</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <ul>
+    <li>
+      <a href="#">Search</a>
+    </li>
+    <li>
+      <a href="#">Images</a>
+    </li>
+    <li>
+      <a href="#">Maps</a>
+    </li>
+    <li>
+      <a href="#">Play</a>
+    </li>
+    <li>
+      <a href="#">YouTube</a>
+    </li>
+    <li>
+      <a href="#">News</a>
+    </li>
+  </ul>
+
+  <form>
+    <label>Shmoogle</label>
+    <input type="search" name="search">
+    <input type="submit" value="Search">
+  </form>
+
+  <%= yield %>
+
+</body>
+</html>
